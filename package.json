@@ -1,0 +1,33 @@
+{
+  "name": "MD",
+  "version": "1.0.0",
+  "description": "notes、records about my work and study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint --config .commitlintrc.js -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haokunaxx/MD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haokunaxx/MD/issues"
+  },
+  "homepage": "https://github.com/haokunaxx/MD#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "conventional-changelog-cli": "^2.2.2",
+    "husky": "^7.0.4"
+  }
+}
